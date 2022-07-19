@@ -1,0 +1,190 @@
+body {
+    background: url(img/fondo.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+/*------------------CABECERA----------------------*/
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header a {
+    margin-left: 1%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 200ms;
+}
+
+header a:hover {
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+.contact a {
+    margin-left: 10%;
+}
+
+.links {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*-----------BIENVENIDA------------------*/
+.welcome {
+    margin: 0px auto;
+    margin-top: 3%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.705);
+    height: 20em;
+    display: flex;
+    align-items: center;
+}
+
+.welcome p {
+    width: 70%;
+    margin: 1%;
+}
+
+.welcome img {
+    margin: 1%;
+    width: 20%;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+/*--------------CONTENEDOR PRINCIPAL-------------------*/
+.information {
+    margin: 0px auto;
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*LIBROS*/
+
+.books h2 {
+    margin: 3%;
+}
+
+.books {
+    width: 49%;
+    margin-right: 1%;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.books div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+.books div img {
+    width: 20%;
+    margin-right: 3%;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all 300ms;
+}
+
+.books div img:hover {
+    width: 21%;
+    box-shadow: 5px 5px 5px white;
+}
+
+/*PERSONAJES*/
+
+.characters h2 {
+    margin-left: 3%;
+}
+
+.characters {
+    margin-left: 1%;
+    width: 49%;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.characters div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+
+.characters div img {
+    width: 20%;
+    margin-right: 3%;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: all 300ms;
+}
+
+.characters div img:hover {
+    width: 21%;
+    box-shadow: 5px 5px 5px white;
+}
+
+/*AUTOR*/
+.author {
+    margin-top: 1%;
+    background-color: rebeccapurple;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.author div {
+    margin: 3%;
+}
+
+.author img {
+    height: 20em;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+@media screen and (max-width:1200px) {
+    .author div:nth-child(3) {
+        display: none;
+    }
+    .information p {
+        display: none;
+    }
+    .books div img {
+        width: 90%;
+        transition: all 300ms;
+    }
+    .books div img:hover {
+        width: 95%;
+    }
+    .characters div img {
+        width: 90%;
+        transition: all 300ms;
+    }
+    .characters div img:hover {
+        width: 95%;
+    }
+}
